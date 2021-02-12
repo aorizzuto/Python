@@ -17,8 +17,8 @@ from google.auth.transport.requests import Request
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
-file_token='.credentials/token.pickle' # File donde se guardará el token de Google una vez autorizado
-file_cred='.credentials/credentials.json' # Credenciales de acceso
+file_token='' # File donde se guardará el token de Google una vez autorizado
+file_cred='' # Credenciales de acceso
 max_events=10
 
 # NO BORRAR LA SIGUIENTE LINEA
