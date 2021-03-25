@@ -30,8 +30,9 @@ class Philosopher(threading.Thread):
     def run(self):                                     
         """Actions for the philosopher."""
         spaces = getSpaces(self.key)                    # Spaces to format by column each philosopher
-        
-        for i in range(self.Loops):                             
+        i=0
+        while i < self.Loops: 
+            i+=1                     
             self.stopThinking(spaces)                   # Philosopher go to dinner table
             self.Sleep()                                # Movements cannot be super fast, maybe another philosopher grab the chopstick first
             self.leftChopstick.take(self.key,'LEFT')    # Get left chopstick
