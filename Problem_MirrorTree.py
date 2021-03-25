@@ -1,14 +1,16 @@
-# Check if a given Binary Tree is symmetric or not
+"""Check if a given Binary Tree is symmetric or not."""
 
-# Node structure
 class Node:
-	def __init__(self, key):
-		self.key = key			# Key of the node to compare with other nodes
-		self.left = None		# left node
-		self.right = None		# right node
+    """Node structure."""
 
-# Function to check if is mirror
+    def __init__(self, key):
+        """Initialize the node."""
+        self.key = key			# Key of the node to compare with other nodes
+        self.left = None		# left node
+        self.right = None		# right node
+
 def isMirror(root1, root2):
+    """Check if is mirror."""
     if root1 is None and root2 is None:				# If we came to the end, is mirror
         return True
 
@@ -21,7 +23,8 @@ def isMirror(root1, root2):
 
 # Check if tree is mirror
 def isSymmetric(root):
-	return isMirror(root, root)
+    """Check if is symetric."""
+    return isMirror(root, root)
 
 
 # Tree creation
